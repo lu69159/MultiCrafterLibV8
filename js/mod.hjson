@@ -3,6 +3,6 @@ name: "test"
 author: "[#42a5f5[]]Liplum[[]]"
 description: "MultiCrafter Test Js"
 version: 1.0
-minGameVersion: 154
+minGameVersion: 157.4
 java: false
 dependencies:["multi-crafter"]
