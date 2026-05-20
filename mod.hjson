@@ -12,6 +12,6 @@ Please check the repository below to learn more.
 Work on v136 to v146.
 '''
 version: "2.0.0"
-minGameVersion: "136"
+minGameVersion: "154"
 java: true
 hidden: true

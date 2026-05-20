@@ -32,7 +32,7 @@ allprojects {
         resolutionStrategy {
             eachDependency {
                 if(this.requested.group == "com.github.Anuken.Arc") {
-                    this.useVersion("v146")
+                    this.useVersion("v155.4")
                 }
             }
         }
@@ -48,14 +48,14 @@ allprojects {
 }
 mindustry {
     dependency {
-        mindustry on "v146"
-        arc on "v146"
+        mindustry on "v155.4"
+        arc on "v155.4"
     }
     client {
-        mindustry official "v146"
+        mindustry official "v155.4"
     }
     server {
-        mindustry official "v146"
+        mindustry official "v155.4"
     }
     run {
         clearOtherMods

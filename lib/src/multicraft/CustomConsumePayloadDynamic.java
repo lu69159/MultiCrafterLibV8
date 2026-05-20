@@ -7,6 +7,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.consumers.*;
 import mindustry.world.meta.*;
+import multicraft.ui.*;
 
 /** Copy of {@linkplain ConsumePayloadDynamic} that takes a PayloadStack[] */
 public class CustomConsumePayloadDynamic extends Consume {
