@@ -12,9 +12,6 @@ buildscript {
         maven { url = uri("https://www.jitpack.io") }
     }
 }
-ext{
-    mindustryVersion = "v157.4"
-}
 allprojects {
     group = "net.liplum"
     version = "2.0.0"
@@ -35,7 +32,7 @@ allprojects {
         resolutionStrategy {
             eachDependency {
                 if(this.requested.group == "com.github.Anuken.Arc") {
-                    this.useVersion($mindustryVersion)
+                    this.useVersion("v157.4");
                 }
             }
         }
@@ -51,14 +48,14 @@ allprojects {
 }
 mindustry {
     dependency {
-        mindustry on $mindustryVersion
-        arc on $mindustryVersion
+        mindustry on "v157.4"
+        arc on "v157.4"
     }
     client {
-        mindustry official $mindustryVersion
+        mindustry official "v157.4"
     }
     server {
-        mindustry official $mindustryVersion
+        mindustry official "v157.4"
     }
     run {
         clearOtherMods
