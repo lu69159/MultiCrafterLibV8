@@ -26,8 +26,8 @@ mindustry {
         name = "java",
         displayName = "Java",
         main = "WithJsonMod",
-        minGameVersion = "136",
-        version = "0.1",
+        minGameVersion = "157.4",
+        version = "1.0",
         java = true,
     )
 }

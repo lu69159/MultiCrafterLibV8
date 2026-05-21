@@ -1,5 +1,5 @@
 name: Build Mod
-on: [push, pull_request, workflow_dispatch]
+on: [push, pull_request]
 
 jobs:
   buildJar:
@@ -18,8 +18,13 @@ jobs:
       run: |
         chmod +x ./gradlew
         ./gradlew deploy
-    - name: Upload built jar file
+    - name: Upload built java jar file
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ github.event.repository.name }}
-        path: build/libs/${{ github.event.repository.name }}.jar
+        name: java-2.0.0
+        path: java/build/libs/java-2.0.0.jar
+    - name: Upload built js jar file
+      uses: actions/upload-artifact@v4
+      with:
+        name: js-2.0.0
+        path: js/build/libs/js-2.0.0.jar

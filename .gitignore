@@ -1,6 +1,9 @@
 .gradle
 .idea
 build
+bin
 /local.properties
 standalone/injection
 .DS_Store
+myBuild
+
